@@ -17,7 +17,7 @@ function CompJoin() {
       <div className="relative z-20 px-8 md:px-16 py-4">
         <div className="text-center mb-2">
           <h1 className="text-5xl font-bold text-white mb-6 mt-2">
-            Join the Computer Engineering Program at ICEM College Pune
+            Join the MBA Program at ICEM College Pune
           </h1>
           <p className="text-xl text-gray-200 mb-8">
             Empowering the next generation of tech leaders. Unlock your potential

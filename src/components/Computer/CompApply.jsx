@@ -13,8 +13,8 @@ const AdmissionProcess = () => {
       <div className="relative z-10">
         <h2 className="text-3xl font-semibold mb-6">How to Apply</h2>
         <p className="text-lg mb-6">
-          Follow these simple steps to apply for the Computer Engineering
-          program at ICEM College Pune:
+          Follow these simple steps to apply for the MBA
+          program at IGSB College Pune:
         </p>
 
         {/* Container for steps */}

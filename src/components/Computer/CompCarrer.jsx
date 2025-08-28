@@ -18,7 +18,7 @@ function ICEMLandingPage() {
       {/* Program Highlights */}
       <div className="text-center mb-20">
         <h2 className="text-4xl font-semibold text-[#6095ff] mb-8">
-          Why Choose Computer Engineering at ICEM College?
+          Why Choose MBA at ICEM College?
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Card 1 */}
@@ -30,7 +30,7 @@ function ICEMLandingPage() {
               Top-notch Curriculum
             </h3>
             <p className="text-gray-600 text-center">
-              Our Computer Engineering program offers a robust curriculum
+              Our MBA program offers a robust curriculum
               designed to prepare you for the future of technology. Learn from
               experts in the field and gain hands-on experience.
             </p>
@@ -74,7 +74,7 @@ function ICEMLandingPage() {
               Excellent Placements
             </h3>
             <p className="text-gray-600 text-center">
-              Our Computer Engineering graduates have gone on to secure
+              Our MBA graduates have gone on to secure
               prestigious positions in top companies, with an outstanding
               placement rate year after year.
             </p>

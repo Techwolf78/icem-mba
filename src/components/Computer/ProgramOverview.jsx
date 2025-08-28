@@ -31,7 +31,7 @@ function ProgramOverview() {
           Program Overview
         </h2>
         <p className="text-2xl text-gray-600 tracking-wide">
-          The Computer Engineering Department was established in the academic year 2007. Currently, the department offers one undergraduate program, B.E in Computer Engineering, with an intake of 120. The department has a team of highly qualified, motivated, and experienced faculty members with doctorates (Ph.D.) and M.E./M.Tech qualifications in various areas of specialization.
+          The MBA Department was established in the academic year 2007. Currently, the department offers one undergraduate program, B.E in Computer Engineering, with an intake of 120. The department has a team of highly qualified, motivated, and experienced faculty members with doctorates (Ph.D.) and M.E./M.Tech qualifications in various areas of specialization.
         </p>
       </div>
 

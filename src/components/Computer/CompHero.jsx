@@ -75,8 +75,8 @@ function CompHero() {
             <span className="ml-1 animate-blink">|</span>
           </span>{" "}
           with{" "}
-          <span className="text-[#b0d4e9] font-bold mech-hero-wrapper">Computer Engineering</span>{" "}
-          at ICEM
+          <span className="text-[#b0d4e9] font-bold mech-hero-wrapper">MBA</span>{" "}
+          at IGSB
         </h1>
         <p className="mt-4 text-2xl">
           Innovative programs, expert faculty, and endless opportunities for
