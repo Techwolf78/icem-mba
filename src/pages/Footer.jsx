@@ -1,7 +1,5 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import logo from "../assets/images/Icem-footer-logo.png";
-import blogImage1 from "../assets/images/blog1.png";
-import blogImage2 from "../assets/images/blog2.png";
 
 function Footer() {
   useEffect(() => {
@@ -37,7 +35,9 @@ function Footer() {
                   <div>
                     <p> Indira Chanakya Campus (ICC)</p>
                     <p>S.No. 64,65, Gat No. 276 At Post : Parandwadi,</p>
-                    <p>Near Somatne phata, Tal. : Maval, Dist. Pune – 410 506</p>
+                    <p>
+                      Near Somatne phata, Tal. : Maval, Dist. Pune – 410 506
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -94,7 +94,9 @@ function Footer() {
           </div>
           {/* Middle Column */}
           <div className="space-y-6">
-            <h3 className="text-2xl text-[#023b5e] font-bold">Important Links</h3>
+            <h3 className="text-2xl text-[#023b5e] font-bold">
+              Important Links
+            </h3>
             {/* Grid layout for links */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="space-y-8">
@@ -133,43 +135,12 @@ function Footer() {
               </div>
             </div>
           </div>
-
-          {/* Right Column */}
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-[#023b5e]">Popular Posts</h3>
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <img
-                  src={blogImage1}
-                  alt="Investment Opportunities for Women Blog Image"
-                  className="w-36 h-24 object-contain rounded-lg"
-                />
-                <div>
-                  <h4 className="font-semibold text-lg">
-                    Investment Opportunities for Women in India
-                  </h4>
-                  <p className="text-sm text-gray-400">March 13, 2024</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-4">
-                <img
-                  src={blogImage2}
-                  alt="Blog Post 2"
-                  className="w-36 h-24 object-contain rounded-lg"
-                />
-                <div>
-                  <h4 className="font-semibold text-lg">Blog Post 2</h4>
-                  <p className="text-sm text-gray-400">March 13, 2024</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
       {/* Copyright Section */}
       <div className="bg-[#023b5e] py-4 px-8 md:px-16 text-left text-white text-sm mt-auto">
-        <p>© 2024. Indira College of Engineering and Management.</p>
+        <p>© 2025. Indira College of Engineering and Management.</p>
       </div>
     </div>
   );

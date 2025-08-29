@@ -39,7 +39,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const MBACourses = () => {
   return (
-    <div className="px-0 md:px-16 w-full py-10 bg-gradient-to-br from-[#fff7f2] via-[#fff3e6] to-[#ffe5d1] relative overflow-hidden">
+    <div className="px-4 md:px-16 w-full py-10 bg-gradient-to-br from-[#fff7f2] via-[#fff3e6] to-[#ffe5d1] relative overflow-hidden">
       <h2 className="text-2xl md:text-4xl font-bold mb-10 text-center text-[#F37021] tracking-tight drop-shadow-lg">
         MBA Courses
       </h2>
