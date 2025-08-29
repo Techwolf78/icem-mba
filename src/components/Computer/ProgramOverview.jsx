@@ -32,10 +32,10 @@ function ProgramOverview() {
   }, []);
 
   return (
-  <div className="flex flex-col md:flex-row justify-between items-stretch space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-16 poppins-regular">
+    <div className="flex flex-col md:flex-row justify-between items-stretch space-y-6 md:space-y-0 md:space-x-6 px-4 sm:px-8 md:px-16 py-6 sm:py-12 md:py-16 poppins-regular">
       {/* Left Part: Heading and Paragraph */}
-  <div className="flex-1" data-aos="fade-right" ref={leftRef}>
-  <h2 className="text-4xl font-bold text-[#F37021] mb-4 relative">
+      <div className="flex-1" data-aos="fade-right" ref={leftRef}>
+        <h2 className="text-2xl md:text-4xl font-bold text-[#F37021] mb-4 relative">
           {/* Floating Hat Above the "P" */}
           <img
             src={HatImage}
@@ -44,7 +44,7 @@ function ProgramOverview() {
           />
           MBA Programme Overview
         </h2>
-        <p className="text-2xl text-gray-600 tracking-wide">
+        <p className="text-xl md:text-3xl text-gray-600 tracking-wide">
           The MBA programme at ICEM prepares students for leadership roles in business. With experienced faculty and industry-focused curriculum, students gain practical skills and knowledge in areas like Marketing, Finance, HR, Operations, and Business Analytics.
         </p>
       </div>

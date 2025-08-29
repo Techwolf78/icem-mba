@@ -58,7 +58,7 @@ function CompStudying() {
           <div className="bg-white p-4 shadow-lg shadow-orange-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex items-center">
               <FaBuilding className="text-[#F37021] mr-4 text-4xl" /> 
-              <span className="text-sm">INDIRA STUDENT DEVELOPMENT PROGRAM</span>
+              <span className="text-sm">STRONG INDUSTRY-INSTITUTE INTERACTION</span>
             </span>
           </div>
           {/* Card 4 */}
@@ -79,7 +79,7 @@ function CompStudying() {
           <div className="bg-white p-4 shadow-lg shadow-orange-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex items-center">
               <FaChartLine className="text-[#F37021] mr-4 text-4xl" /> {/* New Icon */}
-              <span className="text-sm">EXCEPTIONAL GROWTH OPPORTUNITIES</span> {/* New Text */}
+              <span className="text-sm">PRATICAL LEARNING APPROACH</span> {/* New Text */}
             </span>
           </div>
         </div>

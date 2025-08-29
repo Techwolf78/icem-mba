@@ -17,10 +17,10 @@ function CompJoin() {
       <div className="relative z-20 px-8 md:px-16 py-4">
         <div className="text-center mb-2">
           <h1 className="text-5xl font-bold text-white mb-6 mt-2">
-            Join the MBA Program at ICEM College Pune
+            Join the MBA Programme at ICEM, Pune
           </h1>
           <p className="text-xl text-white mb-8">
-            Empowering the next generation of tech leaders. Unlock your potential
+            Empowering the next generation of entrepreneurs. Unlock your potential
             with our world-class curriculum and experienced faculty.
           </p>
           <button className="bg-transparent border-2 text-[#ffffff] py-2 px-6 rounded-full text-xl hover:bg-[#F37021] hover:text-white transition-all">

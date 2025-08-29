@@ -59,7 +59,7 @@ function CompHighlights() {
               <FontAwesomeIcon icon={faAward} className="text-2xl" />
             </div>
             <p className="text-gray-600 poppins-regular">
-              Ranking Survey - 2019 Winners of SmartIndia Hackathon for consecutive three years organized by Ministry of HRD, AICTE in association with NASSCOM.
+              Ranking Survey - 2019 Winners of Smart India Hackathon for consecutive three years organized by Ministry of HRD, AICTE in association with NASSCOM.
             </p>
           </div>
 
@@ -73,7 +73,7 @@ function CompHighlights() {
               <FontAwesomeIcon icon={faMedal} className="text-2xl" />
             </div>
             <p className="text-gray-600 poppins-regular">
-              Received Outstanding Education Institute (West) Award by National Education Awards 2018.
+              Received Outstanding Education Institute (West) Award by National Education Awards, 2018.
             </p>
           </div>
 

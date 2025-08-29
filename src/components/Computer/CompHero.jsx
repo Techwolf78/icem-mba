@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import backgroundImage from "../../assets/images/bg-mba-icem.jpg";
 import mouseIcon from "../../assets/images/white.png"; // Make sure the path to your PNG is correct
 
@@ -7,12 +7,15 @@ function CompHero() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
-  const words = [
-    "Innovation",
-    "Evolution",
-    "Frontier",
-    "Revolution",
-  ];
+  const words = useMemo(
+    () => [
+      "Business",
+      "Strategy",
+      "Finance",
+      "Marketing",
+    ],
+    []
+  );
 
   useEffect(() => {
     const handleTyping = () => {
@@ -38,7 +41,7 @@ function CompHero() {
     const timeout = setTimeout(handleTyping, isDeleting ? 80 : 120); // Faster typing speed during typing phase and deleting
 
     return () => clearTimeout(timeout);
-  }, [currentText, isDeleting, currentWordIndex]);
+  }, [currentText, isDeleting, currentWordIndex, words]);
 
   // Function to handle the scroll-down behavior
   const handleScrollDown = () => {
@@ -50,7 +53,7 @@ function CompHero() {
 
   return (
     <div
-      className=" font-baskervville-regular px-8 md:px-16 relative pt-8 min-h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
+      className="font-baskervville-regular px-4 sm:px-8 md:px-16 relative pt-8 min-h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex flex-col md:flex-row items-center md:items-start"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
 
@@ -68,28 +71,27 @@ function CompHero() {
       </style>
 
       {/* Left side content */}
-      <div className="flex flex-col items-start z-20 w-full md:w-1/2">
-        <h1 className="text-[60px] text-[#ffffff] font-semibold leading-tight mb-6">
-          Lead the Tech{" "}
+      <div className="flex flex-col items-center md:items-start z-20 w-full md:w-1/2 text-center md:text-left">
+        <h1 className="text-[40px] sm:text-[50px] md:text-[60px] text-[#ffffff] font-semibold leading-tight mb-6">
+          Creating Leaders in{" "}
           <span className="relative inline-block">
             {currentText}
             <span className="ml-1 animate-blink">|</span>
           </span>{" "}
           with{" "}
-            <span className="text-[#F37021] font-bold mech-hero-wrapper">MBA</span>{" "}
-          at ICEM
+          <span className="text-[#F37021] font-bold mech-hero-wrapper">MBA</span>{" "}
+          at ICEM.
         </h1>
-        <p className="mt-4 text-2xl">
-          Innovative programs, expert faculty, and endless opportunities for
-          growth await you.
+        <p className="mt-4 text-lg sm:text-xl md:text-2xl">
+ Accelerate your ambitions into leadership through experiential learning, specializations, and global exposure.
         </p>
       </div>
 
       {/* Form container (Right side) */}
-      <div className="flex justify-end w-full md:w-1/2 z-20">
+      <div className="flex justify-center md:justify-end w-full md:w-1/2 z-20 mt-8 md:mt-0">
         <div
-          className="p-6 max-w-md w-full shadow-md bg-white/95 backdrop-blur-md"
-            style={{ background: "#FCFAEE" }} // Even more solid orange
+          className="p-4 sm:p-6 max-w-sm sm:max-w-md w-full shadow-md bg-white/95 backdrop-blur-md"
+          style={{ background: "#FCFAEE" }}
         >
           <form className="space-y-4">
             <div>
@@ -186,25 +188,6 @@ function CompHero() {
               </button>
             </div>
           </form>
-        </div>
-      </div>
-
-      {/* New Scroll Down Section */}
-      <div
-        className="absolute px-8 md:px-16 bottom-5 left-5 z-20 text-white text-lg flex cursor-pointer"
-        onClick={handleScrollDown}
-      >
-        {/* First Column: Mouse Icon */}
-        <div className="flex items-center justify-center mr-4">
-          <img
-            src={mouseIcon}
-            alt="Scroll Down"
-            className="w-8 h-12 animate-bounce"
-          />
-        </div>
-        <div className="flex flex-col items-start justify-start">
-          <p className="text-lg text-white">Scroll Down</p>
-          <p className="text-sm text-gray-300">to know more</p>
         </div>
       </div>
     </div>

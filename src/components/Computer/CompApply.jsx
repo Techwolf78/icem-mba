@@ -91,7 +91,7 @@ const AdmissionProcess = () => {
             >
               5
             </div>
-            <p className="text-lg">Confirm your seat and join ICEM College!</p>
+            <p className="text-lg">Confirm your seat and join ICEM!</p>
           </div>
         </div>
 

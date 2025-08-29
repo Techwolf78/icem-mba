@@ -4,42 +4,30 @@ import imgFinance from '../../assets/images/fm.avif';
 import imgHR from '../../assets/images/hrm.avif';
 import imgOperations from '../../assets/images/om.avif';
 import imgAnalyst from '../../assets/images/ba.avif';
-import {
-  FaChartBar,
-  FaMoneyBillWave,
-  FaUsers,
-  FaCogs,
-  FaSearch,
-} from "react-icons/fa";
 
 const mbaCourses = [
   {
     title: "Marketing Management",
-    icon: <FaChartBar className="text-[#F37021] text-3xl" />, // Marketing
     duration: "2 Years",
     img: imgMarketing,
   },
   {
     title: "Finance Management",
-    icon: <FaMoneyBillWave className="text-[#F37021] text-3xl" />, // Finance
     duration: "2 Years",
     img: imgFinance,
   },
   {
     title: "Human Resource Management",
-    icon: <FaUsers className="text-[#F37021] text-3xl" />, // HR
     duration: "2 Years",
     img: imgHR,
   },
   {
     title: "Operation Management",
-    icon: <FaCogs className="text-[#F37021] text-3xl" />, // Operations
     duration: "2 Years",
     img: imgOperations,
   },
   {
     title: "Business Analyst",
-    icon: <FaSearch className="text-[#F37021] text-3xl" />, // Analyst
     duration: "2 Years",
     img: imgAnalyst,
   },
@@ -52,7 +40,7 @@ import { FaArrowRight } from "react-icons/fa";
 const MBACourses = () => {
   return (
     <div className="px-0 md:px-16 w-full py-10 bg-gradient-to-br from-[#fff7f2] via-[#fff3e6] to-[#ffe5d1] relative overflow-hidden">
-      <h2 className="text-4xl font-extrabold mb-10 text-center text-[#F37021] tracking-tight drop-shadow-lg">
+      <h2 className="text-2xl md:text-4xl font-bold mb-10 text-center text-[#F37021] tracking-tight drop-shadow-lg">
         MBA Courses
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 mx-auto max-w-7xl">
@@ -63,12 +51,6 @@ const MBACourses = () => {
             style={{ minHeight: 320 }}
             tabIndex={0}
           >
-            {/* Animated icon */}
-            <div className="absolute top-4 right-4 z-10">
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#fff7f2] border-2 border-[#F37021] shadow group-hover:scale-110 transition-transform duration-300">
-                {course.icon}
-              </span>
-            </div>
             {/* Image on top with hover zoom, no padding so image touches card borders */}
             <div className="w-full flex items-center justify-center">
               <img

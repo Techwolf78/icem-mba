@@ -17,47 +17,46 @@ function CompPointers() {
   }, []);
 
   return (
-    <div className="px-8 md:px-16 py-12 poppins-regular">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-16">
+    <div className="px-4 sm:px-8 md:px-16 py-8 sm:py-12 poppins-regular">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
         {/* Card 1: Program Format */}
         <div
-          className="bg-[#FFF6F2] p-6 shadow-lg  flex items-center justify-center"
+          className="bg-[#FFF6F2] p-4 sm:p-6 shadow-lg flex items-center justify-center"
           data-aos="fade-up"
         >
-          <div className="flex items-center justify-center mr-4 space-x-4">
-            <FaCalendarAlt size={40} className="text-[#F37021]" />
+          <div className="flex items-center justify-center space-x-4">
+            <FaCalendarAlt size={30} className="text-[#F37021] sm:text-3xl md:text-4xl" />
             <div className="text-center">
-              <h2>Program Format</h2>
-              <p className="mt-2 text-2xl font-semibold">Offline</p>
+              <h2 className="text-base sm:text-lg md:text-xl font-medium">Programme Format</h2>
+              <p className="mt-2 text-lg sm:text-xl md:text-2xl font-semibold">Offline</p>
             </div>
           </div>
         </div>
 
         {/* Card 2: Duration */}
         <div
-          className="bg-[#FFF6F2] p-6 shadow-lg  flex items-center justify-center"
+          className="bg-[#FFF6F2] p-4 sm:p-6 shadow-lg flex items-center justify-center"
           data-aos="fade-up"
         >
-          <div className="flex items-center justify-center mr-4 space-x-4">
-            <FaRegClock size={40} className="text-[#F37021]" />
+          <div className="flex items-center justify-center space-x-4">
+            <FaRegClock size={30} className="text-[#F37021] sm:text-3xl md:text-4xl" />
             <div className="text-center">
-              <h2>Duration</h2>
-              <p className="mt-2 text-2xl font-semibold">2 Years</p>
+              <h2 className="text-base sm:text-lg md:text-xl font-medium">Duration</h2>
+              <p className="mt-2 text-lg sm:text-xl md:text-2xl font-semibold">2 Years</p>
             </div>
           </div>
         </div>
 
         {/* Card 3: Program Fees */}
         <div
-          className="bg-[#FFF6F2] p-6 shadow-lg  flex items-center justify-center"
+          className="bg-[#FFF6F2] p-4 sm:p-6 shadow-lg flex items-center justify-center"
           data-aos="fade-up"
         >
-          <div className="flex items-center justify-center mr-4 space-x-4">
-            <FaMoneyBillWave size={40} className="text-[#F37021]" />
+          <div className="flex items-center justify-center space-x-4">
+            <FaMoneyBillWave size={30} className="text-[#F37021] sm:text-3xl md:text-4xl" />
             <div className="text-center">
-              <h2>Program Fees</h2>
-              <p className="mt-2 text-2xl font-semibold">Rs. 2,39,493
- /-</p>
+              <h2 className="text-base sm:text-lg md:text-xl font-medium">Programme Fees</h2>
+              <p className="mt-2 text-lg sm:text-xl md:text-2xl font-semibold">Rs. 2,39,493 /-</p>
             </div>
           </div>
         </div>

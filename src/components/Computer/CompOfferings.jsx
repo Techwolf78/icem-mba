@@ -173,49 +173,15 @@ function CompOfferings() {
           <div className="content">
             <p className="text-xl font-semibold text-gray-800 mb-2 transition-all duration-300">Excellent Academic Interface</p>
             <p className="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 mt-2">
-              Cutting-edge curriculum designed by industry experts
+              Cutting-edge curriculum designed by industry experts.
             </p>
           </div>
           <div className="circle absolute bottom-4 right-4 w-8 h-8 bg-gradient-to-r from-[#F37021] to-[#ffad42] rounded-full shadow-lg"></div>
         </div>
 
-        {/* Quality Holistic Infrastructure */}
-        <div
-          ref={addToRefs}
-          className="group bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center h-full relative transform transition-all duration-500 hover:shadow-2xl border border-[#f0f0f0] overflow-hidden"
-          data-aos="fade-up"
-        >
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#F37021] to-[#ffad42]"></div>
-          <div className="mb-5 p-3 rounded-full bg-gradient-to-br from-[#fff5eb] to-[#ffedd5] group-hover:from-[#ffedd5] group-hover:to-[#fed7aa] transition-all duration-500">
-            <FaUniversity size={42} className="text-[#F37021] icon transition-all duration-500" />
-          </div>
-          <div className="content">
-            <p className="text-xl font-semibold text-gray-800 mb-2 transition-all duration-300">Quality Holistic Infrastructure</p>
-            <p className="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 mt-2">
-              State-of-the-art facilities for comprehensive development
-            </p>
-          </div>
-          <div className="circle absolute bottom-4 right-4 w-8 h-8 bg-gradient-to-r from-[#F37021] to-[#ffad42] rounded-full shadow-lg"></div>
-        </div>
 
-        {/* Customized MPSC/MPSC-ES/UPSC Training Program */}
-        <div
-          ref={addToRefs}
-          className="group bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center h-full relative transform transition-all duration-500 hover:shadow-2xl border border-[#f0f0f0] overflow-hidden"
-          data-aos="fade-up"
-        >
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#F37021] to-[#ffad42]"></div>
-          <div className="mb-5 p-3 rounded-full bg-gradient-to-br from-[#fff5eb] to-[#ffedd5] group-hover:from-[#ffedd5] group-hover:to-[#fed7aa] transition-all duration-500">
-            <FaChalkboardTeacher size={42} className="text-[#F37021] icon transition-all duration-500" />
-          </div>
-          <div className="content">
-            <p className="text-xl font-semibold text-gray-800 mb-2 transition-all duration-300">Customized MPSC/MPSC-ES /UPSC Training Program</p>
-            <p className="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 mt-2">
-              Personalized coaching for optimal exam preparation
-            </p>
-          </div>
-          <div className="circle absolute bottom-4 right-4 w-8 h-8 bg-gradient-to-r from-[#F37021] to-[#ffad42] rounded-full shadow-lg"></div>
-        </div>
+
+
 
         {/* Guaranteed Core Placements for Core Branches */}
         <div
@@ -228,9 +194,9 @@ function CompOfferings() {
             <FaBriefcase size={42} className="text-[#F37021] icon transition-all duration-500" />
           </div>
           <div className="content">
-            <p className="text-xl font-semibold text-gray-800 mb-2 transition-all duration-300">Guaranteed Core Placements for Core Branches</p>
+            <p className="text-xl font-semibold text-gray-800 mb-2 transition-all duration-300">Guaranteed Placements for Core Branches</p>
             <p className="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 mt-2">
-              Industry partnerships ensuring relevant career opportunities
+              Industry partnerships ensuring relevant career opportunities.
             </p>
           </div>
           <div className="circle absolute bottom-4 right-4 w-8 h-8 bg-gradient-to-r from-[#F37021] to-[#ffad42] rounded-full shadow-lg"></div>
@@ -247,32 +213,15 @@ function CompOfferings() {
             <FaDesktop size={42} className="text-[#F37021] icon transition-all duration-500" />
           </div>
           <div className="content">
-            <p className="text-xl font-semibold text-gray-800 mb-2 transition-all duration-300">Product Companies for Campus Placements</p>
+            <p className="text-xl font-semibold text-gray-800 mb-2 transition-all duration-300">Industry Readiness Programme</p>
             <p className="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 mt-2">
-              Direct recruitment opportunities with leading tech firms
+Get customized training and placement programme for better opportunities. 
             </p>
           </div>
           <div className="circle absolute bottom-4 right-4 w-8 h-8 bg-gradient-to-r from-[#F37021] to-[#ffad42] rounded-full shadow-lg"></div>
         </div>
 
-        {/* Foreign Languages (German, Japanese, French) */}
-        <div
-          ref={addToRefs}
-          className="group bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center h-full relative transform transition-all duration-500 hover:shadow-2xl border border-[#f0f0f0] overflow-hidden"
-          data-aos="fade-up"
-        >
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#F37021] to-[#ffad42]"></div>
-          <div className="mb-5 p-3 rounded-full bg-gradient-to-br from-[#fff5eb] to-[#ffedd5] group-hover:from-[#ffedd5] group-hover:to-[#fed7aa] transition-all duration-500">
-            <FaLanguage size={42} className="text-[#F37021] icon transition-all duration-500" />
-          </div>
-          <div className="content">
-            <p className="text-xl font-semibold text-gray-800 mb-2 transition-all duration-300">Foreign Languages (German, Japanese, French)</p>
-            <p className="text-gray-600 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 mt-2">
-              Comprehensive language programs for global opportunities
-            </p>
-          </div>
-          <div className="circle absolute bottom-4 right-4 w-8 h-8 bg-gradient-to-r from-[#F37021] to-[#ffad42] rounded-full shadow-lg"></div>
-        </div>
+
       </div>
     </div>
   );

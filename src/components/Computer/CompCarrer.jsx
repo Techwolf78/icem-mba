@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGraduationCap,
@@ -30,7 +30,7 @@ function ICEMLandingPage() {
               Top-notch Curriculum
             </h3>
             <p className="text-gray-600 text-center">
-              Our MBA program offers a robust curriculum
+              Our MBA programme offers a robust curriculum
               designed to prepare you for the future of technology. Learn from
               experts in the field and gain hands-on experience.
             </p>
@@ -46,7 +46,7 @@ function ICEMLandingPage() {
             </h3>
             <p className="text-gray-600 text-center">
               Learn from experienced professors and industry experts who are
-              passionate about educating the next generation of engineers.
+              passionate about educating the next generation of entrepreneurs.
             </p>
           </div>
 
@@ -56,12 +56,12 @@ function ICEMLandingPage() {
               <FontAwesomeIcon icon={faTrophy} className="text-2xl" />
             </div>
             <h3 className="text-xl font-semibold text-[#000000] mb-4">
-              Excellence in Innovation
+      Practical Learning Approach  
             </h3>
             <p className="text-gray-600 text-center">
-              ICEM is ranked among the top institutes for innovation in
-              engineering. Our students regularly participate in national and
-              international tech competitions.
+ 
+The MBA programme will facilitate practical learning of different functional areas of management with an integrated approach to various functions of management.
+ 
             </p>
           </div>
 

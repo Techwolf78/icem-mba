@@ -35,7 +35,7 @@ function Testimonials() {
     <div className="mb-4 px-8 md:px-16 py-10 bg-[#FCFAEE] relative overflow-hidden">
       {/* Main Heading outside the white rectangle */}
       <h2 className="text-4xl font-semibold text-[#F37021] text-center mb-8">
-        What Our Students Say
+Student Testimonials
       </h2>
 
       {/* Single glassmorphism rectangle container */}
