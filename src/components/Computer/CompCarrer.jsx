@@ -11,19 +11,19 @@ import CompApply from "./CompApply"; // Import the CompApply component
 
 function ICEMLandingPage() {
   return (
-    <div className="bg-[#F6FBFF] py-16  relative poppins-regular">
-      <div className="px-8 md:px-16">
+    <div className="bg-[#FCFAEE]   relative poppins-regular">
+      <div className="px-8 md:px-16 py-4">
 
 
       {/* Program Highlights */}
-      <div className="text-center mb-20">
-        <h2 className="text-4xl font-semibold text-[#6095ff] mb-8">
+      <div className="text-center mb-8">
+        <h2 className="text-4xl font-semibold text-[#F37021] mb-8">
           Why Choose MBA at ICEM College?
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Card 1 */}
           <div className="bg-white p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
-            <div className="w-16 h-16 bg-[#ff6f61] text-white rounded-full flex items-center justify-center mb-6">
+            <div className="w-16 h-16 bg-[#F37021] text-white rounded-full flex items-center justify-center mb-6">
               <FontAwesomeIcon icon={faGraduationCap} className="text-2xl" />
             </div>
             <h3 className="text-xl font-semibold text-[#000000] mb-4">
@@ -38,7 +38,7 @@ function ICEMLandingPage() {
 
           {/* Card 2 */}
           <div className="bg-white p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
-            <div className="w-16 h-16 bg-[#ffbd59] text-white rounded-full flex items-center justify-center mb-6">
+            <div className="w-16 h-16 bg-[#F37021] text-white rounded-full flex items-center justify-center mb-6">
               <FontAwesomeIcon icon={faUserGraduate} className="text-2xl" />
             </div>
             <h3 className="text-xl font-semibold text-[#000000] mb-4">
@@ -52,7 +52,7 @@ function ICEMLandingPage() {
 
           {/* Card 3 */}
           <div className="bg-white p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
-            <div className="w-16 h-16 bg-[#4caf50] text-white rounded-full flex items-center justify-center mb-6">
+            <div className="w-16 h-16 bg-[#F37021] text-white rounded-full flex items-center justify-center mb-6">
               <FontAwesomeIcon icon={faTrophy} className="text-2xl" />
             </div>
             <h3 className="text-xl font-semibold text-[#000000] mb-4">
@@ -67,7 +67,7 @@ function ICEMLandingPage() {
 
           {/* Card 4 */}
           <div className="bg-white p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
-            <div className="w-16 h-16 bg-[#2196f3] text-white rounded-full flex items-center justify-center mb-6">
+            <div className="w-16 h-16 bg-[#F37021] text-white rounded-full flex items-center justify-center mb-6">
               <FontAwesomeIcon icon={faRocket} className="text-2xl" />
             </div>
             <h3 className="text-xl font-semibold text-[#000000] mb-4">

@@ -1,12 +1,15 @@
-import React from "react";
-import './App.css';
-import './index.css';
+
+// import React from 'react';
+import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import Computer from './pages/Computer';
+import './App.css';
+import './index.css';
+import Icemmba from './pages/Computer';
 import Navbar from './pages/Navbar';
 import Footer from './pages/Footer';
 import ApplyNowButton from './components/ApplyNowButton';
+
 
 function App() {
   return (
@@ -14,7 +17,7 @@ function App() {
       <div className="relative">
         <Navbar />
         <Routes>
-          <Route path="/igsb" element={<PageWithDynamicTitle title="igsb" />} />
+          <Route path="/icemmba" element={<PageWithDynamicTitle title="ICEM" />} />
         </Routes>
         <Footer />
         <ApplyNowButton />
@@ -22,6 +25,7 @@ function App() {
     </Router>
   );
 }
+
 
 // Component to handle dynamic title
 function PageWithDynamicTitle({ title }) {
@@ -32,11 +36,13 @@ function PageWithDynamicTitle({ title }) {
       <Helmet>
         <title>{dynamicTitle}</title>
       </Helmet>
-
-      {title === "igsb" && <Computer />}
-       
+      {title === 'ICEM' && <Icemmba />}
     </>
   );
 }
+
+PageWithDynamicTitle.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default App;

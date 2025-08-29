@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import backgroundImage from "../../assets/images/herocomp-e.jpg";
+import backgroundImage from "../../assets/images/bg-mba-icem.jpg";
 import mouseIcon from "../../assets/images/white.png"; // Make sure the path to your PNG is correct
 
 function CompHero() {
@@ -53,14 +53,15 @@ function CompHero() {
       className=" font-baskervville-regular px-8 md:px-16 relative pt-8 min-h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      {/* Black Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-10"></div>
+
+  {/* Black Overlay for text contrast (now below all content and form, above orange overlay) */}
+  <div className="absolute top-0 left-0 w-full h-full bg-black opacity-80 z-20 pointer-events-none"></div>
 
       {/* Add custom style for selected text */}
       <style>
         {`
           ::selection {
-            background-color: #66aaff; /* Blue background for selection */
+              background-color: #F37021; /* Orange background for selection */
             color: #ffffff; /* White text for selection */
           }
         `}
@@ -75,8 +76,8 @@ function CompHero() {
             <span className="ml-1 animate-blink">|</span>
           </span>{" "}
           with{" "}
-          <span className="text-[#b0d4e9] font-bold mech-hero-wrapper">MBA</span>{" "}
-          at IGSB
+            <span className="text-[#F37021] font-bold mech-hero-wrapper">MBA</span>{" "}
+          at ICEM
         </h1>
         <p className="mt-4 text-2xl">
           Innovative programs, expert faculty, and endless opportunities for
@@ -87,15 +88,15 @@ function CompHero() {
       {/* Form container (Right side) */}
       <div className="flex justify-end w-full md:w-1/2 z-20">
         <div
-          className="p-6 max-w-md w-full shadow-md"
-          style={{ backgroundColor: "rgba(139, 197, 255, 0.3)" }} // Semi-transparent blue
+          className="p-6 max-w-md w-full shadow-md bg-white/95 backdrop-blur-md"
+            style={{ background: "#FCFAEE" }} // Even more solid orange
         >
           <form className="space-y-4">
             <div>
               <input
                 type="text"
                 id="name"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#8BC5FF] focus:outline-none focus:ring-2 focus:ring-[#006BB3]"
+                className="w-full p-1.5 bg-[#FCE8D5] text-black rounded border border-[#FCE8D5] focus:outline-none focus:ring-2 focus:ring-[#FCE8D5]"
                 placeholder="Enter your name"
                 required
               />
@@ -104,7 +105,7 @@ function CompHero() {
               <input
                 type="email"
                 id="email"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#8BC5FF] focus:outline-none focus:ring-2 focus:ring-[#006BB3]"
+                className="w-full p-1.5 bg-[#FCE8D5] text-black rounded border border-[#FCE8D5] focus:outline-none focus:ring-2 focus:ring-[#FCE8D5]"
                 placeholder="Enter your email"
                 required
               />
@@ -113,7 +114,7 @@ function CompHero() {
               <input
                 type="tel"
                 id="mobile"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#8BC5FF] focus:outline-none focus:ring-2 focus:ring-[#006BB3]"
+                className="w-full p-1.5 bg-[#FCE8D5] text-black rounded border border-[#FCE8D5] focus:outline-none focus:ring-2 focus:ring-[#FCE8D5]"
                 placeholder="Enter your mobile number"
                 required
               />
@@ -121,7 +122,7 @@ function CompHero() {
             <div>
               <select
                 id="state"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#8BC5FF] focus:outline-none focus:ring-2 focus:ring-[#006BB3]"
+                className="w-full p-1.5 bg-[#FCE8D5] text-black rounded border border-[#FCE8D5] focus:outline-none focus:ring-2 focus:ring-[#FCE8D5]"
                 required
               >
                 <option value="">Select State</option>
@@ -131,7 +132,7 @@ function CompHero() {
             <div>
               <select
                 id="city"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#8BC5FF] focus:outline-none focus:ring-2 focus:ring-[#006BB3]"
+                className="w-full p-1.5 bg-[#FCE8D5] text-black rounded border border-[#FCE8D5] focus:outline-none focus:ring-2 focus:ring-[#FCE8D5]"
                 required
               >
                 <option value="">Select City</option>
@@ -141,7 +142,7 @@ function CompHero() {
             <div>
               <select
                 id="discipline"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#8BC5FF] focus:outline-none focus:ring-2 focus:ring-[#006BB3]"
+                className="w-full p-1.5 bg-[#FCE8D5] text-black rounded border border-[#FCE8D5] focus:outline-none focus:ring-2 focus:ring-[#FCE8D5]"
                 required
               >
                 <option value="">Select Discipline</option>
@@ -151,7 +152,7 @@ function CompHero() {
             <div>
               <select
                 id="course"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#8BC5FF] focus:outline-none focus:ring-2 focus:ring-[#006BB3]"
+                className="w-full p-1.5 bg-[#FCE8D5] text-black rounded border border-[#FCE8D5] focus:outline-none focus:ring-2 focus:ring-[#FCE8D5]"
                 required
               >
                 <option value="">Select Course</option>
@@ -161,7 +162,7 @@ function CompHero() {
             <div>
               <select
                 id="program"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#8BC5FF] focus:outline-none focus:ring-2 focus:ring-[#006BB3]"
+                className="w-full p-1.5 bg-[#FCE8D5] text-black rounded border border-[#FCE8D5] focus:outline-none focus:ring-2 focus:ring-[#FCE8D5]"
                 required
               >
                 <option value="">Select Program</option>
@@ -172,14 +173,14 @@ function CompHero() {
               <input
                 type="number"
                 id="cet-score"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#8BC5FF] focus:outline-none focus:ring-2 focus:ring-[#006BB3]"
+                className="w-full p-1.5 bg-[#FCE8D5] text-black rounded border border-[#FCE8D5] focus:outline-none focus:ring-2 focus:ring-[#FCE8D5]"
                 placeholder="Enter CET Score"
               />
             </div>
             <div>
               <button
                 type="submit"
-                className="w-full py-2 bg-[#006BB3] text-white rounded-lg hover:bg-[#00508D]"
+                className="w-full py-2 bg-white text-[#F37021] border-2 border-[#F37021] rounded-lg font-semibold hover:bg-[#F37021] hover:text-white transition-colors duration-200"
               >
                 Submit
               </button>

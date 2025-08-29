@@ -1,13 +1,17 @@
-import React, { useEffect } from 'react';
+import  { useEffect, useRef, useState } from 'react';
 // Import the image
-import ProgramImage from '../../assets/images/macpng.png';
+import ProgramImage from '../../assets/images/mba-overview.jpg';
 import HatImage from '../../assets/images/hat.png';  // Import the floating hat image
 
 // Import AOS and its CSS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 function ProgramOverview() {
+  const leftRef = useRef(null);
+  const [leftHeight, setLeftHeight] = useState('auto');
+
   useEffect(() => {
     // Initialize AOS
     AOS.init({
@@ -15,32 +19,43 @@ function ProgramOverview() {
       easing: 'ease-in-out', // Easing function for the animation
       once: true, // Whether the animation should happen only once
     });
+
+    // Set the height of the right image container to match the left
+    function updateHeight() {
+      if (leftRef.current) {
+        setLeftHeight(leftRef.current.offsetHeight + 'px');
+      }
+    }
+    updateHeight();
+    window.addEventListener('resize', updateHeight);
+    return () => window.removeEventListener('resize', updateHeight);
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-6 poppins-regular">
+  <div className="flex flex-col md:flex-row justify-between items-stretch space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-16 poppins-regular">
       {/* Left Part: Heading and Paragraph */}
-      <div className="flex-1" data-aos="fade-right">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4 relative">
+  <div className="flex-1" data-aos="fade-right" ref={leftRef}>
+  <h2 className="text-4xl font-bold text-[#F37021] mb-4 relative">
           {/* Floating Hat Above the "P" */}
           <img
             src={HatImage}
             alt="Hat"
-            className="absolute left-[-25px] top-[-38px] w-16 h-16 animate-floating" // Apply floating animation class
+            className="absolute left-[-25px] top-[-38px] w-16 h-16 animate-floating"
           />
-          Program Overview
+          MBA Programme Overview
         </h2>
         <p className="text-2xl text-gray-600 tracking-wide">
-          The MBA Department was established in the academic year 2007. Currently, the department offers one undergraduate program, B.E in Computer Engineering, with an intake of 120. The department has a team of highly qualified, motivated, and experienced faculty members with doctorates (Ph.D.) and M.E./M.Tech qualifications in various areas of specialization.
+          The MBA programme at ICEM prepares students for leadership roles in business. With experienced faculty and industry-focused curriculum, students gain practical skills and knowledge in areas like Marketing, Finance, HR, Operations, and Business Analytics.
         </p>
       </div>
 
       {/* Right Part: Image */}
-      <div className="flex-1 bg-white" data-aos="fade-left">  {/* Make container transparent */}
+      <div className="flex-1 bg-white flex items-center justify-center p-4" data-aos="fade-left" style={{height: leftHeight, minHeight: 0}}>
         <img
           src={ProgramImage} // Use the imported image
-          alt="Program"
-          className="w-full h-auto "
+          alt="Programme"
+          className="max-w-md w-full h-auto object-contain"
+          style={{maxHeight: '320px'}}
         />
       </div>
 

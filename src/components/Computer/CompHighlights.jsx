@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy, faAward, faMedal, faCertificate } from '@fortawesome/free-solid-svg-icons';
 
@@ -41,7 +41,7 @@ function CompHighlights() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div className="w-12 h-12 bg-[#6095ff] text-white rounded-full flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-[#F37021] text-white rounded-full flex items-center justify-center mb-4">
               <FontAwesomeIcon icon={faTrophy} className="text-2xl" />
             </div>
             <p className="text-gray-600 poppins-regular">
@@ -55,7 +55,7 @@ function CompHighlights() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <div className="w-12 h-12 bg-[#6095ff] text-white rounded-full flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-[#F37021] text-white rounded-full flex items-center justify-center mb-4">
               <FontAwesomeIcon icon={faAward} className="text-2xl" />
             </div>
             <p className="text-gray-600 poppins-regular">
@@ -69,7 +69,7 @@ function CompHighlights() {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <div className="w-12 h-12 bg-[#6095ff] text-white rounded-full flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-[#F37021] text-white rounded-full flex items-center justify-center mb-4">
               <FontAwesomeIcon icon={faMedal} className="text-2xl" />
             </div>
             <p className="text-gray-600 poppins-regular">
@@ -83,7 +83,7 @@ function CompHighlights() {
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            <div className="w-12 h-12 bg-[#6095ff] text-white rounded-full flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-[#F37021] text-white rounded-full flex items-center justify-center mb-4">
               <FontAwesomeIcon icon={faCertificate} className="text-2xl" />
             </div>
             <p className="text-gray-600 poppins-regular">

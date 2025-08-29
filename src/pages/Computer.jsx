@@ -8,7 +8,7 @@ import CompHighlights from "../components/Computer/CompHighlights";
 import CompCarrer from "../components/Computer/CompCarrer";
 import CompRecruiter from "../components/Computer/CompRecruiter";
 import CompJoin from "../components/Computer/CompJoin";
-import AutoChatbot from "../components/AutoChatbot"; // Import AutoChatbot
+import MBACourses from "../components/Computer/MBACourses";
 
 function Computer() {
   return (
@@ -17,6 +17,7 @@ function Computer() {
       <CompHero />
       <CompPointers />
       <ProgramOverview />
+      <MBACourses />
       <CompOfferings />
       <CompStudying />
       <CompBrochure />
@@ -24,8 +25,6 @@ function Computer() {
       <CompJoin />
       <CompCarrer />
       <CompRecruiter />
-
-      <AutoChatbot />
     </div>
   );
 }
