@@ -33,7 +33,7 @@ function ProgramOverview() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-stretch space-y-6 md:space-y-0 md:space-x-6 px-4 md:px-16 py-6 sm:py-8 md:py-16 poppins-regular">
+    <div className="flex flex-col overflow-hidden md:flex-row justify-between items-stretch space-y-6 md:space-y-0 md:space-x-6 px-4 md:px-16 py-6 sm:py-8 md:py-16 poppins-regular">
       {/* Left Part: Heading and Paragraph */}
       <div className="flex-1" data-aos="fade-right" ref={leftRef}>
         <h2 className="text-2xl md:text-4xl font-bold text-[#F37021] mb-4 relative">

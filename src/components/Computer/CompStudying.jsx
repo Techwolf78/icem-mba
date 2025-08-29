@@ -29,7 +29,7 @@ function CompStudying() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row px-4 md:px-16 py-6 poppins-regular" style={{ background: '#F7F3EF' }}>
+    <div className="flex overflow-hidden flex-col md:flex-row px-4 md:px-16 py-6 poppins-regular" style={{ background: '#F7F3EF' }}>
       {/* Left Side - Full width on mobile, 70% on desktop */}
       <div className="w-full md:w-[70%] md:pr-8" data-aos="fade-right" ref={leftRef}>
         <h1 className="text-2xl md:text-4xl font-semibold text-left mb-2 md:mb-4">Studying with Indira College of</h1>
