@@ -48,7 +48,7 @@ const App = () => {
   };
  
   return (
-    <div className="flex poppins-regular flex-col justify-center items-center py-6 md:py-12 bg-[#F7F3EF] px-0 md:px-16 font-poppins">
+    <div className="flex overflow-hidden poppins-regular flex-col justify-center items-center py-6 md:py-12 bg-[#F7F3EF] px-0 md:px-16 font-poppins">
       {/* Heading above the slider */}
       <div className="text-2xl md:text-4xl font-semibold text-gray-800 mb-6">
         Our Recruiters

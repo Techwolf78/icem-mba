@@ -7,7 +7,6 @@ import HatImage from '../../assets/images/hat.png';  // Import the floating hat 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
 function ProgramOverview() {
   const leftRef = useRef(null);
   const [leftHeight, setLeftHeight] = useState('auto');
@@ -22,8 +21,10 @@ function ProgramOverview() {
 
     // Set the height of the right image container to match the left
     function updateHeight() {
-      if (leftRef.current) {
+      if (leftRef.current && window.innerWidth >= 768) {
         setLeftHeight(leftRef.current.offsetHeight + 'px');
+      } else {
+        setLeftHeight('auto');
       }
     }
     updateHeight();
@@ -32,30 +33,30 @@ function ProgramOverview() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-stretch space-y-6 md:space-y-0 md:space-x-6 px-8  md:px-16 py-6 sm:py-12 md:py-16 poppins-regular">
+    <div className="flex flex-col md:flex-row justify-between items-stretch space-y-6 md:space-y-0 md:space-x-6 px-4 md:px-16 py-6 sm:py-8 md:py-16 poppins-regular">
       {/* Left Part: Heading and Paragraph */}
       <div className="flex-1" data-aos="fade-right" ref={leftRef}>
         <h2 className="text-2xl md:text-4xl font-bold text-[#F37021] mb-4 relative">
-          {/* Floating Hat Above the "P" */}
+          {/* Floating Hat Above the "P" - Adjusted for mobile */}
           <img
             src={HatImage}
             alt="Hat"
-            className="absolute left-[-25px] top-[-38px] w-16 h-16 animate-floating"
+            className="absolute left-[-15px] md:left-[-25px] top-[-25px] md:top-[-38px] w-10 h-10 md:w-16 md:h-16 animate-floating"
           />
           MBA Programme Overview
         </h2>
-        <p className="text-xl md:text-3xl text-gray-600 tracking-wide">
+        <p className="text-lg md:text-xl lg:text-3xl text-gray-600 tracking-wide">
           The MBA programme at ICEM prepares students for leadership roles in business. With experienced faculty and industry-focused curriculum, students gain practical skills and knowledge in areas like Marketing, Finance, HR, Operations, and Business Analytics.
         </p>
       </div>
 
       {/* Right Part: Image */}
-      <div className="flex-1 bg-white flex items-center justify-center p-4" data-aos="fade-left" style={{height: leftHeight, minHeight: 0}}>
+      <div className="flex-1 bg-white flex items-center justify-center p-4" data-aos="fade-left" style={{height: window.innerWidth >= 768 ? leftHeight : 'auto', minHeight: 0}}>
         <img
           src={ProgramImage} // Use the imported image
           alt="Programme"
-          className="max-w-md w-full h-auto object-contain"
-          style={{maxHeight: '320px'}}
+          className="max-w-full w-full h-auto object-contain"
+          style={{maxHeight: window.innerWidth >= 768 ? '320px' : '250px'}}
         />
       </div>
 
