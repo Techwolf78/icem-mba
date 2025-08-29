@@ -32,9 +32,9 @@ function Testimonials() {
   };
 
   return (
-    <div className="mb-4 px-8 md:px-16 py-10 bg-[#FCFAEE] relative overflow-hidden">
+    <div className="mb-4 px-4 sm:px-8 md:px-16 py-10 bg-[#FCFAEE] relative overflow-hidden">
       {/* Main Heading outside the white rectangle */}
-      <h2 className="text-4xl font-semibold text-[#F37021] mb-8 text-left">
+      <h2 className="text-3xl md:text-4xl font-semibold text-[#F37021] mb-8 text-center">
         Student Testimonials
       </h2>
 
@@ -42,27 +42,27 @@ function Testimonials() {
       <div className="bg-white/70 backdrop-blur-md shadow-xl shadow-orange-100 border border-[#ffd6b3] rounded-2xl">
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-6 flex flex-col md:flex-row items-start text-left">
-              {/* Left: Profile Image (left on md+, top on small) */}
+            <div key={index} className="p-4 sm:p-6 flex flex-col md:flex-row items-start text-left">
+              {/* Left: Profile Image (responsive layout) */}
               <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover shadow-md"
+                  className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full object-cover shadow-md"
                 />
               </div>
 
               {/* Right / Bottom: Text Content */}
               <div className="w-full">
-                <p className="text-lg font-semibold text-[#000000] mb-1">
+                <p className="text-base sm:text-lg font-semibold text-[#000000] mb-1">
                   {testimonial.name}
                 </p>
-                <p className="text-sm text-gray-500 mb-3">
+                <p className="text-sm sm:text-base text-gray-500 mb-3">
                   {testimonial.role} at {testimonial.company}
                 </p>
-                <p className="text-gray-600 mb-3">{testimonial.text}</p>
+                <p className="text-sm sm:text-base text-gray-600 mb-3">{testimonial.text}</p>
                 {testimonial.placementCellRole && (
-                  <p className="text-gray-600 italic">{testimonial.placementCellRole}</p>
+                  <p className="text-sm sm:text-base text-gray-600 italic">{testimonial.placementCellRole}</p>
                 )}
               </div>
             </div>
