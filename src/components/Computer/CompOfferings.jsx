@@ -155,7 +155,7 @@ function CompOfferings() {
 
   return (
     <div ref={sectionRef} className="px-4 md:px-8 lg:px-16 py-12 md:py-16 lg:py-20 bg-gradient-to-br from-[#f8f9fa] to-[#ffffff] poppins-regular overflow-hidden">
-      <h2 className="section-title text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 md:mb-16 text-[#2d3748] tracking-tight" data-aos="fade-up">
+      <h2 className="section-title text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 md:mb-16 text-[#2d3748] tracking-tight" >
   Top <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F37021] to-[#ff8c42]">Offerings</span> 
       </h2>
 
@@ -164,7 +164,7 @@ function CompOfferings() {
         <div
           ref={addToRefs}
           className="group bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center h-full relative transform transition-all duration-500 hover:shadow-2xl border border-[#f0f0f0] overflow-hidden"
-          data-aos="fade-up"
+          
         >
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#F37021] to-[#ffad42]"></div>
           <div className="mb-5 p-3 rounded-full bg-gradient-to-br from-[#fff5eb] to-[#ffedd5] group-hover:from-[#ffedd5] group-hover:to-[#fed7aa] transition-all duration-500">
@@ -187,7 +187,7 @@ function CompOfferings() {
         <div
           ref={addToRefs}
           className="group bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center h-full relative transform transition-all duration-500 hover:shadow-2xl border border-[#f0f0f0] overflow-hidden"
-          data-aos="fade-up"
+          
         >
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#F37021] to-[#ffad42]"></div>
           <div className="mb-5 p-3 rounded-full bg-gradient-to-br from-[#fff5eb] to-[#ffedd5] group-hover:from-[#ffedd5] group-hover:to-[#fed7aa] transition-all duration-500">
@@ -206,7 +206,7 @@ function CompOfferings() {
         <div
           ref={addToRefs}
           className="group bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center h-full relative transform transition-all duration-500 hover:shadow-2xl border border-[#f0f0f0] overflow-hidden"
-          data-aos="fade-up"
+          
         >
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#F37021] to-[#ffad42]"></div>
           <div className="mb-5 p-3 rounded-full bg-gradient-to-br from-[#fff5eb] to-[#ffedd5] group-hover:from-[#ffedd5] group-hover:to-[#fed7aa] transition-all duration-500">
